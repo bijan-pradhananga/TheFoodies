@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c85c5e1d0c.js"></script>
+    <title>TheFoodies</title>
+</head>
+
+<body>
+    <!-- for the navigation bar -->
+    <header>
+        <a href="#"><img src="images/logo/logo.png" alt="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about-us">About</a></li>
+                <li class="drop"><a href="#menu-section">Menu <i class="fa-solid fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="#menu-section">Our Usuals</a></li>
+                        <li><a href="#special-section">Our Specials</a></li>
+                    </ul>
+                </li>
+                <li><a href="#service-section">Services</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- for the photo under the nav bar -->
+    <div class="container" style="background-image: url(images/mainbg.jpg); background-size:cover;">&nbsp;
+        <div class="heading">
+            <h1>Welcome to TheFoodies</h1>
+        </div>
+        <div class="quote">
+            <h2>Nothing brings people together like good food</h2>
+        </div>
+        <div class="bottom-text">
+            <p>𝓞𝓹𝓮𝓷𝓲𝓷𝓰 𝓗𝓸𝓾𝓻𝓼: 9𝓪𝓶 𝓽𝓸 10𝓹𝓶</p>
+        </div>
+
+    </div>
+    <section id="about-us"></section>
+    <!-- about us page -->
+    <div class="aboutus-section">
+        <div class="first1">
+            <h1>About</h1>
+            <div class="para">
+                <h3>
+                    Ever since we can remember, we were fascinated by different cuisines and flavors. When we finally
+                    started to establish my own restaurant , we discovered how much joy we get from watching others
+                    enjoy my restaurant's dishes.
+                    From healthy quick bites to an impressive meal for your friends and family, we're here to provide
+                    you the best foods, drinks and
+                    servies to our customers. Browse my site for a short tour of our restaurant and don't forget to
+                    check out our specials.
+                    We started our business in 2000 with one goal in mind: providing an enjoyable dining experience to
+                    the Ghattekulo area. Thanks to our experience and dedication, we've managed to become masters of
+                    the craft. Providing dishes that are fresh, healthy and simply unforgettable.
+                </h3>
+            </div>
+        </div>
+        <div class="first2" style="background-image: url(images/square.jpg); background-size:cover;"></div>
+    </div>
+    <section id="menu-section"></section>
+    <!-- for the menu section -->
+    <div class="menu-section">
+        <div class="second">
+            <!-- button to view the full menu -->
+            <h1>Menu&nbsp;<button onclick="myFunction()">View Full Menu</button></h1>
+        </div>
+        <div id="full-menu">
+            <div id="front-menu" style="background-image: url(images/usual-menu.png); background-size:cover;"></div>
+            <div id="back-menu" style="background-image: url(images/special-menu.png); background-size:cover;"></div>
+            <div id="drinks-menu" style="background-image: url(images/drinks.png); background-size:cover;"></div>
+        </div>
+        <!-- java script for the button to view menu -->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("full-menu");
+                if (x.style.display === "flex") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "flex";
+                }
+            }
+        </script>
+        <!-- usual section -->
+        <div class="usual-section">
+            <div class="header2">
+                <h2>𝓞𝓾𝓻 𝓤𝓼𝓾𝓪𝓵𝓼 &nbsp;<i class="fas fa-utensils"></i></h2>
+            </div>
+            <div class="usuals">
+                <div class="usuals1">
+                    <div class="photo-section" style="background-image: url(images/usual1.jpg); background-size:cover;">
+                    </div>
+                    <p>
+                        The Spicy Chowmein For You To Try <br>
+                    </p>
+                    <div class="price">Price: Rs. 250/-</div>
+                </div>
+                <div class="usuals2">
+                    <div class="photo-section" style="background-image: url(images/usual2.jpg); background-size:cover;">
+                    </div>
+                    <p>
+                        The Perfect Street Food to fill your Hunger <br>
+                    </p>
+                    <div class="price">Price: Rs. 100/-</div>
+                </div>
+                <div class="usuals3">
+                    <div class="photo-section" style="background-image: url(images/usual3.png); background-size:cover;">
+                    </div>
+                    <p>
+                        Samosa along with the Chutney Is Just The Best <br>
+                    </p>
+                    <div class="price">Price: Rs. 50/-</div>
+                </div>
+                <div class="usuals4">
+                    <div class="photo-section" style="background-image: url(images/usual4.jpg); background-size:cover;">
+                    </div>
+                    <p>
+                        Everybody's favourite Nepali Steam MoMo <br>
+                    </p>
+                    <div class="price">Price: Rs. 250/-</div>
+                </div>
+                <div class="usuals5">
+                    <div class="photo-section" style="background-image: url(images/usual5.jpg); background-size:cover;">
+                    </div>
+                    <p>
+                        The Perfect Winter Soup To Warm You Up <br>
+                    </p>
+                    <div class="price">Price: Rs. 200/-</div>
+                </div>
+                <div class="usuals6">
+                    <div class="photo-section" style="background-image: url(images/usual6.jpg); background-size:cover;">
+                    </div>
+                    <p>
+                        The Classic French Fries to Lighten your Day <br>
+                    </p>
+                    <div class="price">Price: Rs. 90/-</div>
+                </div>
+                <div class="usuals7">
+                    <div class="photo-section" style="background-image: url(images/usual7.jpg); background-size:cover;">
+                    </div>
+                    <p>
+                        The Perfect And Cold Desert to finish your Dish <br>
+                    </p>
+                    <div class="price">Price: Rs. 150/-</div>
+                </div>
+                <div class="usuals8">
+                    <div class="photo-section" style="background-image: url(images/usual8.jpg); background-size:cover;">
+                    </div>
+                    <p>
+                        The Hot Spicy Chips Chilly For You <br>
+                    </p>
+                    <div class="price">Price: Rs. 200/-</div>
+                </div>
+            </div>
+        </div>
+        <!-- special section -->
+        <section id="special-section"></section>
+        <div class="special-section">
+            <div class="header3">
+                <h2>𝓞𝓾𝓻 𝓢𝓹𝓮𝓬𝓲𝓪𝓵𝓼 &nbsp;<i class="fas fa-burger"></i></h2>
+            </div>
+            <div class="specials">
+                <div class="specials1">
+                    <div class="photo-section"
+                        style="background-image: url(images/special1.jpg); background-size:cover;"></div>
+                    <p>
+                        The Perfect Sandwich, A Real Classic <br>
+                    </p>
+                    <div class="price">Price: Rs. 300/-</div>
+                </div>
+                <div class="specials2">
+                    <div class="photo-section"
+                        style="background-image: url(images/special2.jpg); background-size:cover;"></div>
+                    <p>
+                        Everyone's Favourite Juicy and Mouthwatering Steak<br>
+                    </p>
+                    <div class="price">Price: Rs. 400/-</div>
+                </div>
+                <div class="specials3">
+                    <div class="photo-section"
+                        style="background-image: url(images/special3.jpg); background-size:cover;"></div>
+                    <p>
+                        Our Traditional Thakali Khana Set <br>
+                    </p>
+                    <div class="price">Price: Rs. 1100/-</div>
+                </div>
+                <div class="specials4">
+                    <div class="photo-section"
+                        style="background-image: url(images/special4.jpg); background-size:cover;"></div>
+                    <p>
+                        The Classic Hamburger to Fill Your Hunger <br>
+                    </p>
+                    <div class="price">Price: Rs. 350/-</div>
+                </div>
+                <div class="specials5">
+                    <div class="photo-section"
+                        style="background-image: url(images/special5.jpg); background-size:cover;"></div>
+                    <p>
+                        The Cheesiest Pizza for the Cheese Lovers <br>
+                    </p>
+                    <div class="price">Price: Rs. 350/-</div>
+                </div>
+                <div class="specials6">
+                    <div class="photo-section"
+                        style="background-image: url(images/special6.jpg); background-size:cover;"></div>
+                    <p>
+                        Our Paneer Katti Roll is a Must Try For The Vegans <br>
+                    </p>
+                    <div class="price">Price: Rs. 250/-</div>
+                </div>
+                <div class="specials7">
+
+                    <div class="photo-section"
+                        style="background-image: url(images/special7.jpg); background-size:cover;"></div>
+                    <p>
+                        Our Chilly Chicken MoMo Delights Everyone<br>
+                    </p>
+                    <div class="price">Price: Rs. 350/-</div>
+                </div>
+                <div class="specials8">
+                    <div class="photo-section"
+                        style="background-image: url(images/special8.jpg); background-size:cover;"></div>
+                    <p>
+                        The Perfect Spicy Spaghetti For You To Try <br>
+                    </p>
+                    <div class="price">Price: Rs. 250/-</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <section id="service-section"></section>
+    <!-- Services section -->
+    <div class="services-section">
+        <div class="third1">
+            <h1>Services</h1>
+        </div>
+        <div class="third2">
+            <div class="pic-section" style="background-image: url(images/service1.jpg); background-size:cover;"></div>
+            <div class="text-section1">
+                <h2>&nbsp;𝓑𝓲𝓻𝓽𝓱𝓭𝓪𝔂 𝓢𝓹𝓮𝓬𝓲𝓪𝓵𝓼 <i class="fas fa-birthday-cake"></i></h2>
+            </div>
+            <div class="text-section2">
+                <p style="text-align: justify; color: #0C1248; font-size: 17px;">Providing you Special Birthday Service
+                    which includes
+                    Birthday Songs, Cakes And Special Candles to light up the Environment
+                    and Make your Loved Ones Feel Special.<br>
+                </p>
+                <p style="font-weight: bold; margin-top: 0.5vh;">Charge: Rs.1200/-</p>
+            </div>
+        </div>
+        <div class="third3">
+            <div class="pic-section" style="background-image: url(images/service2.jpg); background-size:cover;"></div>
+            <div class="text-section1">
+                <h2>&nbsp;𝓜𝓾𝓼𝓲𝓬𝓪𝓵 𝓑𝓪𝓷𝓭𝓼 <i class="fas fa-music"></i> </h2>
+            </div>
+            <div class="text-section2">
+                <p style="text-align: justify; color: #0C1248; font-size: 17px;">You can Book our Musical Band for a
+                    particular
+                    time period to play your favourite songs
+                    Music plus Food is the best Combos which isn't on our Menu.
+                </p>
+                <p style="font-weight: bold; margin-top: 0.5vh;">Charge: Rs.1000/-</p>
+            </div>
+        </div>
+        <div class="third4">
+            <div class="pic-section" style="background-image: url(images/service3.jpeg); background-size:cover;"></div>
+            <div class="text-section1">
+                <h2>&nbsp;𝓟𝓪𝓻𝓽𝔂𝓼 <i class="fas fa-glass-cheers"></i></h2>
+            </div>
+            <div class="text-section2">
+                <p style="text-align: justify; color: #0C1248; font-size: 17px;">Our Restaurant also provides special
+                    party services to
+                    create a party like environment for your friends, family and loved ones.</p>
+                <p style="font-weight: bold; margin-top: 0.5vh;">Charge: Rs.1200/-</p>
+            </div>
+        </div>
+    </div>
+    <!-- for the footer and contact section -->
+    <span id="contact-section"></span>
+    <footer>&nbsp;
+        <div class="final1">
+            <div class="final11">
+                <h1>Contact</h1><br>
+                <h4><i class="fas fa-pizza-slice"></i> &nbsp;TheFoodies</h4>
+                <h4> <i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp;Gopal Chowk, Ghattekulo-32</h4>
+                <h4><i class="fas fa-city"></i> Kathmandu, Nepal</h4>
+                <h4><i class="fas fa-phone"></i> +977 9861703261</h4>
+                <h4><i class="fas fa-envelope"></i> &nbsp;bijan2059@gmail.com</h4>
+            </div>
+            <!-- for the form -->
+            <div class="final12">
+                <h1>Reserve a table</h1><br>
+                <form>
+                    <input type="text" name="full_name" id="name" class="formbox" placeholder="Full Name" style="padding: 10px;"><br>
+                    <input type="email" name="email" id="email" class="formbox" placeholder="Email" style="padding: 10px;"> <br>
+                    <input type="number" name="people" id="people" class="formbox" placeholder="How Many People" style="padding: 10px;">
+                    <br>
+                    <p><input class="formbox" type="datetime-local" placeholder="Date and time"
+                        required name="date" value="2020-11-16T20:00" style="padding: 10px;"></p>
+                    <input type="message" name="message" id="message" class="formbox"
+                        placeholder="Message / Special Requirements" style="padding: 10px;"><br>
+                    <button>Send Message</button>
+                </form>
+            </div>
+            <!-- for the social media icons -->
+            <div class="final13">
+                <h1>Follow Us</h1><br>
+                <div class="final111">
+                    <div class="fb"><a href="https://www.facebook.com/bijan.pradhananga" target="_blank"><i class="fab fa-facebook"></i></a></div>
+                    <div class="insta"><a href="https://www.instagram.com/bijan_pradhananga/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></div>
+                    <div class="twitter"><a href="https://twitter.com/bijanpradhanan1" target="_blank"><i class="fab fa-twitter"></i></a></div>
+                    <div class="twitter"><a href="https://www.reddit.com/user/bijan_411" target="_blank"><i class="fab fa-reddit"></i></a></div>
+                    <div class="twitter"><a href="" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+                </div>
+                <!-- for the Copyright -->
+                <div class="final112">
+                    <p style="text-align: center; font-size:larger;">𝓓𝓮𝓵𝓲𝓿𝓮𝓻𝔂 𝓢𝓮𝓻𝓿𝓲𝓬𝓮𝓼 𝓦𝓲𝓵𝓵 𝓑𝓮
+                        𝓐𝓿𝓪𝓲𝓵𝓪𝓫𝓵𝓮 𝓢𝓸𝓸𝓷 <i class="fas fa-truck"></i></p><br>
+                    Copyright © 2022 TheFoodies.
+                </div>
+            </div>
+        </div>
+        <p></p>
+    </footer>
+</body>
+
+</html>
